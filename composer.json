@@ -1,0 +1,17 @@
+{
+    "name": "ssaweb/appwrite-test-utils",
+    "description": "Helpful classes to write your PHPUnit tests for Appwrite functions",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "SSAWeb\\AppwriteTestUtils\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Lucas Reis",
+            "email": "lucas@mreis.dev"
+        }
+    ]
+}
