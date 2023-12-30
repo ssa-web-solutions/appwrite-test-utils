@@ -1,8 +1,8 @@
 # appwrite-test-utils
 Classes to help you writing your PHPUnit tests for Appwrite functions
 
-### Why a package with a single interface?
-Personal needs that may be useful for somebody else XD
+### Why a package only with contracts?
+Personal needs that may be useful to someone else XD
 
 Basically if you try to write a test to check the data sent to the **json** or **send** methods of Appwrite Functions' API like below:
 
