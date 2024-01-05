@@ -2,7 +2,7 @@
 
 namespace SSAWeb\AppwriteTestUtils;
 
-final class Request {
+class Request {
     public string $bodyRaw;
     public string | array $body;
     public array $headers;

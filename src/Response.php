@@ -2,7 +2,7 @@
 
 namespace SSAWeb\AppwriteTestUtils;
 
-final class Response {
+class Response {
     public function __construct(private mixed $context)
     {
     }

@@ -2,7 +2,7 @@
 
 namespace SSAWeb\AppwriteTestUtils;
 
-final class Context {
+class Context {
     public Response $res;
     public Request $req;
 
