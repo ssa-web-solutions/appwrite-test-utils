@@ -2,9 +2,9 @@
 
 namespace SSAWeb\AppwriteTestUtils;
 
-abstract class Request {
+final class Request {
     public string $bodyRaw;
-    public string | object $body;
+    public string | array $body;
     public array $headers;
     public string $scheme;
     public string $method;
@@ -13,5 +13,20 @@ abstract class Request {
     public string $port;
     public string $path;
     public string $queryString;
-    public object $query;
+    public array $query;
+
+    public function __construct(private mixed $context)
+    {
+        $this->bodyRaw = $context->req->bodyRaw;
+        $this->body = $context->req->body;
+        $this->headers = $context->req->headers;
+        $this->scheme = $context->req->scheme;
+        $this->method = $context->req->method;
+        $this->url = $context->req->url;
+        $this->host = $context->req->host;
+        $this->port = $context->req->port;
+        $this->path = $context->req->path;
+        $this->queryString = $context->req->queryString;
+        $this->query = $context->req->query;
+    }
 }
