@@ -7,20 +7,20 @@ class Response {
     {
     }
 
-    public function empty(): void
+    public function empty()
     {
-        $this->context->res->empty();
+        return $this->context->res->empty();
     }
-    public function redirect(string $text, int $status): void
+    public function redirect(string $text, int $status)
     {
-        $this->context->res->redirect($text, $status);
+        return $this->context->res->redirect($text, $status);
     }
-    public function send(string $text, int $status): void
+    public function send(string $text, int $status)
     {
-        $this->context->res->send($text, $status);
+        return $this->context->res->send($text, $status);
     }
-    public function json(array $obj, int $status): void
+    public function json(array $obj, int $status)
     {
-        $this->context->res->json($obj, $status);
+        return $this->context->res->json($obj, $status);
     }
 }
