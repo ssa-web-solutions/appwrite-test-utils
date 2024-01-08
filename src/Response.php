@@ -9,18 +9,18 @@ class Response {
 
     public function empty(): void
     {
-        $this->context->req->empty();
+        $this->context->res->empty();
     }
     public function redirect(string $text, int $status): void
     {
-        $this->context->req->redirect($text, $status);
+        $this->context->res->redirect($text, $status);
     }
     public function send(string $text, int $status): void
     {
-        $this->context->req->send($text, $status);
+        $this->context->res->send($text, $status);
     }
     public function json(array $obj, int $status): void
     {
-        $this->context->req->json($obj, $status);
+        $this->context->res->json($obj, $status);
     }
 }
